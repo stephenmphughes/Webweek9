@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marks Calculator</title>
+  </head>
+  <nav>
+    <a href="index.html">Bottles of Beer</a>
+    <a href="studentmarks.html">Student Marks</a>
+  </nav>
+  <body>
+    <h1>Marks Calculator</h1>
+    <p>How many subjects do you have?</p>
+    <input
+      type="number"
+      id="numSubjects"
+      placeholder="Enter number of subjects"
+    />
+    <button onclick="createInputs()">Submit</button>
+
+    <div id="marksSection"></div>
+    <button
+      onclick="calculateMarks()"
+      id="calculateButton"
+      style="display: none"
+    >
+      Calculate
+    </button>
+
+    <h2 id="results" style="display: none">Your Results:</h2>
+    <div id="resultsDiv"></div>
+
+    <script src="studentmarks.js"></script>
+  </body>
+</html>
